@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\CLVD Github Projects\\Group1project\\part-2-poe-MphutiKeketso\\EventEaseBookingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD380FA-CD62-4985-A316-DCF8A348059D}|EventEaseBookingSystem.csproj|c:\\users\\lab_services_student\\documents\\clvd github projects\\group1project\\part-2-poe-mphutikeketso\\eventeasebookingsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFD380FA-CD62-4985-A316-DCF8A348059D}|EventEaseBookingSystem.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD380FA-CD62-4985-A316-DCF8A348059D}|EventEaseBookingSystem.csproj|c:\\users\\lab_services_student\\documents\\clvd github projects\\group1project\\part-2-poe-mphutikeketso\\eventeasebookingsystem\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFD380FA-CD62-4985-A316-DCF8A348059D}|EventEaseBookingSystem.csproj|solutionrelative:views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD380FA-CD62-4985-A316-DCF8A348059D}|EventEaseBookingSystem.csproj|c:\\users\\lab_services_student\\documents\\clvd github projects\\group1project\\part-2-poe-mphutikeketso\\eventeasebookingsystem\\controllers\\eventcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFD380FA-CD62-4985-A316-DCF8A348059D}|EventEaseBookingSystem.csproj|solutionrelative:controllers\\eventcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD380FA-CD62-4985-A316-DCF8A348059D}|EventEaseBookingSystem.csproj|c:\\users\\lab_services_student\\documents\\clvd github projects\\group1project\\part-2-poe-mphutikeketso\\eventeasebookingsystem\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFD380FA-CD62-4985-A316-DCF8A348059D}|EventEaseBookingSystem.csproj|solutionrelative:views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CLVD Github Projects\\Group1project\\part-2-poe-MphutiKeketso\\EventEaseBookingSystem\\Views\\Event\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Event\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CLVD Github Projects\\Group1project\\part-2-poe-MphutiKeketso\\EventEaseBookingSystem\\Views\\Event\\Index.cshtml",
+              "RelativeToolTip": "Views\\Event\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T20:17:31.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventController1.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CLVD Github Projects\\Group1project\\part-2-poe-MphutiKeketso\\EventEaseBookingSystem\\Controllers\\EventController1.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventController1.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CLVD Github Projects\\Group1project\\part-2-poe-MphutiKeketso\\EventEaseBookingSystem\\Controllers\\EventController1.cs",
+              "RelativeToolTip": "Controllers\\EventController1.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAuwHQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T20:16:57.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CLVD Github Projects\\Group1project\\part-2-poe-MphutiKeketso\\EventEaseBookingSystem\\Views\\Booking\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CLVD Github Projects\\Group1project\\part-2-poe-MphutiKeketso\\EventEaseBookingSystem\\Views\\Booking\\Index.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T20:10:53.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CLVD Github Projects\\Group1project\\part-2-poe-MphutiKeketso\\EventEaseBookingSystem\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CLVD Github Projects\\Group1project\\part-2-poe-MphutiKeketso\\EventEaseBookingSystem\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwE8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T17:31:55.114Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

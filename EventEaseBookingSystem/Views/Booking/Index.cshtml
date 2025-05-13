@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Booking>
+
+@{
+    ViewData["Title"] = "Bookings";
+}
+
+<h2>Bookings</h2>
+
+<form asp-action="Index" method="get">
+   <div class="form-group">
+        <label for="search">Search Bokkings:</label>
+    <input type="text" name="searchString" class="form-control" placeholder="Search Bookings..." value="@Context.Request.QueryString"/>  
+   </div>
+   <button type="submit" class="btn btn-primary mt-2">Search</button>
+</form>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]        
+    </div>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+    {
+    <div class="alert alert-danger " >
+        @error.ErrorMessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    }
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add New Booking</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Event</th>
+            <th>Venue</th>
+            <th>Booking Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Event.EventName</td>
+                <td>@item.Venue.VenueName</td>
+                <td>@item.BookingDate.ToString("yyyy-MM-dd")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.BookingId" class="btn btn-warning">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.BookingId" class="btn btn-info">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.BookingId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

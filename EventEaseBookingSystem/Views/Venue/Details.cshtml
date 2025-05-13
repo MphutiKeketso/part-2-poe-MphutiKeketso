@@ -1,0 +1,123 @@
+﻿@model Venue
+
+@{
+    ViewData["Title"] = "Venue Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #212529;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .detail-group {
+            margin-bottom: 25px;
+        }
+
+        .detail-label {
+            font-size: 14px;
+            color: #6c757d;
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .detail-value {
+            font-size: 16px;
+            color: #212529;
+            padding: 8px 0;
+        }
+
+        .action-buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+            border: 1px solid #6c757d;
+        }
+
+        .btn-primary {
+            background-color: #0d6efd;
+            color: white;
+            border: 1px solid #0d6efd;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Details</h1>
+
+        <div class="detail-group">
+            <span class="detail-label">@Model.VenueName</span>
+            <div class="detail-value"></div>
+        </div>
+
+        <div class="detail-group">
+            <span class="detail-label">Location: </span>
+            <div class="detail-value">@Model.Location</div>
+        </div>
+
+        <div class="detail-group">
+            <span class="detail-label">Capacity:</span>
+            <div class="detail-value">@Model.Capacity</div>
+            <strong>Venue Image:</strong> 
+            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                <img src="@Model.ImageUrl" alt="Venue Image" width="200" height="200" style="object-fit:cover;border-radius:8px;" />
+            }
+            else
+            {
+                <span>No Image</span>
+            }
+        </div>
+
+        <a asp-action="Edit" asp-route-id="@Model.VenueId" class="btn btn-warning mt-3">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary mt-3">Back to List</a>
+    </div>
+</body>
+</html>

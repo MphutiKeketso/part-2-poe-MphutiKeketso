@@ -1,0 +1,42 @@
+﻿@model Venue
+
+@{
+    ViewData["Title"] = "Edit Venue";
+}
+
+<h2>Edit Venue</h2>
+
+<form asp-action="Edit" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="VenueName" class="control-label"></label>
+        <input asp-for="VenueName" class="form-control" />
+        <span asp-validation-for="VenueName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Location" class="control-label"></label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Capacity" class="control-label"></label>
+        <input asp-for="Capacity" class="form-control" />
+        <span asp-validation-for="Capacity" class="text-danger"></span>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <div class="form-group">
+            <label>Current Image</label><br />
+            <img src="@Model.ImageUrl" alt="Venue Image" width="150" height="150" style="-o-object-fit:cover; border-radius:8px;" />
+        </div>
+    }
+
+    <div class="form-group">
+        <label asp-for="ImageFile" class="control-label"></label>
+        <input asp-for="ImageFile" type="file" class="form-control" />
+        <span asp-validation-for="ImageFile" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="VenueId" />
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
